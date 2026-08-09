@@ -2,7 +2,7 @@
   "name": "PO Manager",
   "short_name": "PO Manager",
   "description": "Aplikasi Purchase Order offline",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f7fa",
