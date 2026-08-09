@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14233c">
+    <link rel="manifest" href="manifest.json">
+    <title>Detail purchase</title>
+</head>
+<body class="detail-page">
+    <div class="detail">
+        <div class="header-page">
+            <button class="btn-back" onclick="window.history.back()">Back</button>
+            <h2>Detail Purchase Order</h2>
+        </div>
+    </div>
+    <div class="po-card">
+        <p><b>PT :</b><span id="pt"></span></p>
+        <p><b>Tanggal :</b><span id="tanggal"></span></p>
+        <p><b>Nomor PO :</b><span id="nopo"></span></p>
+        <p><b>Barang :</b><span id="barang"></span></p>
+        <p><b>Harga Jual :</b>Rp<span id="jual"></span></p>
+        <p><b>Qty :</b><span id="qty"></span></p>
+        <p><b>Harga Beli :</b>Rp<span id="beli"></span></p>
+        <p><b>Total :</b>Rp<span id="total"></span></p>
+        <p><b>Profit :</b>Rp<span id="profit"></span></p>
+    </div>
+
+    <script src="indexed.js"></script>
+    <script src="pwa.js"></script>
+</body>
+</html>

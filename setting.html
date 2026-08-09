@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14233c">
+    <link rel="manifest" href="manifest.json">
+    <title>Setting</title>
+</head>
+<body onload="tampilSetting()" class="setting-page">
+    <header class="setting-po">
+        <button class="btn-back" onclick="kembali()">Back</button>
+        <h2>SETTING</h2>
+    </header>
+    <div class="setting-card">
+        <h2>Informasi Perusahaan</h2>
+        <label>Nama Perusahaan</label>
+        <input type="text" id="namaPerusahaan">
+        <label>Alamat</label>
+        <textarea id="alamat"></textarea>
+        <label>Telepon</label>
+        <input type="text" id="telepon" >
+        <label>Email</label>
+        <input type="email" id="email">
+        <button class="btn-simpan" onclick="simpanSetting()">Simpan</button>
+    </div>
+    <div class="card-akun">
+        <h2>Keamanan Akun</h2>
+        <label>Username Baru</label>
+        <input type="text" id="usernameBaru">
+        <label>Password Lama</label>
+        <input type="password" id="passwordLama">
+        <label>Password Baru</label>
+        <input type="password" id="passwordBaru">
+        <label>Konfirmasi Password</label>
+        <input type="password" id="konfirmasiPassword">
+        <button class="btn-simpan" onclick="gantiAkun()" >Simpan Perubahan</button>
+    </div>
+    <div class="setting-card">
+        <h2>Data Aplikasi</h2>
+        <button class="btn-biru" onclick="backupData()">Backup Data</button>
+        <button class="btn-kuning" onclick="exportData()">Export JSON</button>
+        <button class="btn-merah" onclick="hapusSemuaData()">Hapus Semua Data</button>
+    </div>
+    <div class="setting-card">
+        <h2>Akun</h2>
+        <button class="btn-logout" onclick="logout()">Logout</button>
+    </div>
+  
+
+    <script src="indexed.js"></script>
+    <script src="pwa.js"></script>
+</body>
+</html>     

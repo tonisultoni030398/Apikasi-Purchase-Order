@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#14233c">
+    <link rel="manifest" href="manifest.json">
+    <title>Tambah Purchase</title>
+</head>
+<body class="po-page">
+    <header class="judul-po">
+        <button class="btn-back" onclick="kembali()">Back</button>
+        <h2>Tambah Purchase Order</h2>
+    </header>
+    <div class="card">
+        <div class="form-group">
+            <label for="pt">Nama PT</label>
+            <input type="text" id="pt" placeholder="Masukan Nama PT">
+        </div>
+
+         <div class="form-group">
+            <label for="tanggal">Tanggal PO</label>
+            <input type="date" id="tanggal">
+        </div>
+
+         <div class="form-group">
+            <label for="nopo">Nomor PO</label>
+            <input type="text" id="nopo" placeholder="Masukan Nomor PO">
+        </div>
+
+         <div class="form-group">
+            <label for="barang">Nama Barang</label>
+            <input type="text" id="barang" placeholder="Masukan Nama Barang">
+        </div>
+
+         <div class="form-group">
+            <label for="jual">Harga Jual</label>
+            <input type="number" id="jual" oninput="hitung()" placeholder="0">
+        </div>
+
+         <div class="form-group">
+            <label for="qty">Qty</label>
+            <input type="number" id="qty" oninput="hitung()" placeholder="0">
+        </div>
+
+         <div class="form-group">
+            <label for="beli">Harga Beli</label>
+            <input type="number" id="beli" oninput="hitung()" placeholder="0">
+        </div>
+
+        <div class="hasil">
+            <p>Total Penjualan</p>
+            <h3 id="total">Rp 0</h3>
+            <p>Profit</p>
+            <h3 id="profit">Rp 0</h3>
+        </div>
+
+        <button id="simpan" onclick="simpanPO()">Simpan</button>
+
+    </div>
+    
+    <script src="indexed.js"></script>
+    <script src="pwa.js"></script>
+</body>
+</html>

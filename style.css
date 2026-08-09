@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+.login-page{
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-card{
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+.login-card h1{
+    text-align: center;
+    color: #0a3aa0;
+    margin-bottom: 5px;
+}
+.login-card p{
+    text-align: center;
+    color: #463737;
+    margin-bottom: 20px;
+}
+.login{
+    animation: fadeIn 1.5s infinite ease-in-out;
+}
+.login-card label{
+    display: block;
+    margin-top: 14px;
+    font-weight: 600;
+}
+.login-card input{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+.login-card input:focus{
+    border: 2px solid #2563eb;
+}
+.login-card button{
+    width: 100%;
+    margin-top: 27px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.login-card button::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   background: #8541df;
+   transition: .5s;
+   z-index: -1;
+}
+.login-card button:hover::before{
+    left: 0;
+}
+#pesan{
+    margin-top: 15px;
+    color: red;
+    font-weight: 600;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.dashboard-page{
+    background: #f1f5f9;
+}
+.judul{
+    background: #2563eb;
+    padding: 18px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.container{
+    padding: 20px;
+}
+.container h3{
+    margin-top: 10px;
+    animation: fadeIn 1.5s infinite ease-in-out;
+}
+.container p{
+    color: gray;
+    margin-bottom: 30px;
+}
+.menu{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    background: #fff;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    color: #222;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+    z-index: 1;
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #1d4ed8;
+    transition: .5s;
+    z-index: -1;
+}
+.menu:hover::before{
+    left: 0;
+}
+.menu:hover{
+    color: white;
+    transform: scaleY(-4px);
+}
+.logout{
+    background: #ef4444;
+    color: #fff;
+}
+@keyframes fadeIn{
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.po-page{
+    background: #f1f5f9;
+}
+.judul-po{
+    display: flex;
+    background: #ebcd25;
+    padding: 18px;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.judul-po h2{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 32px;
+}
+.btn-back{
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #222;
+    transition: .3s;
+}
+.btn-back:hover{
+    color: #f1f5f9;
+    transform: scaleY(-5px);
+}
+.card{
+    width: 95%;
+    max-width: 500px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+.form-group{
+    margin-bottom: 18px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.form-group input{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+.form-group input:focus{
+    border:2px solid #ebcd25;
+}
+.hasil{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ebcd25;
+    border-radius: 10px;
+}
+.hasil h3{
+    color: #160246;
+    margin-bottom: 15px;
+}
+#simpan{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#simpan::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   background: #1d4ed8;
+   transition: .5s;
+   z-index: -1;
+}
+#simpan:hover::before{
+    left: 0;
+}
+
+
+
+.data-page{
+    background: #f1f5f9;
+}
+
+.data-po{
+     background: #ebcd25;
+    padding: 18px;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.search-box{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.search-box input,
+.search-box select{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.po-card{
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+.po-card h4{
+    padding: 3px;
+    background: #f1f5f9;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.po-card p{
+    margin: 8px 0;
+}
+.aksi{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.detail{
+   flex: 1;
+   background: #2563eb;
+   color: #fff;
+}
+.edit{
+   flex: 1;
+   background: #f59e0b;
+   color: #fff;
+}
+.hapus{
+   flex: 1;
+   background: #dc2626;
+   color: #fff;
+}
+.aksi button{
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.detail-page{
+    background: #f1f5f9;
+}
+.header-page{
+    background: #2563eb;
+    padding: 18px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+
+.filter-box{
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+
+.filter-box select{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.ringkasan{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.box-ringkasan{
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+}
+.box-ringkasan h4{
+    margin: 0;
+    color: #666;
+}
+.box-ringkasan p{
+   margin-top: 10px;
+   font-size: 22px;
+   font-weight: bold;
+   color: #2563eb
+}
+.table-wrapper{
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.laporan-table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.laporan-table th{
+   background: #f4b400;
+   color: #000;
+   padding: 12px;
+   text-align: center;
+}
+.laporan-table td{
+   border-bottom: 1px solid #ddd;
+   padding: 10px;
+   text-align: center;
+}
+.laporan-table tr:nth-child(even){
+   background: #f8f8f8;
+}
+.laporan-table th:hover{
+   background: #fff9d6;
+}
+.btn-laporan{
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-laporan:hover{
+    background: #1d4ed8;
+    transform: scaleY(-2px);
+    box-shadow: 0 5px 15px rgba(37,99,235,.3);
+}
+.btn-laporan:active{
+    transform: scale(.98);
+}
+.setting-page{
+    background: #f1f5f9;
+}
+.setting-po{
+    background: #2563eb;
+    padding: 18px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.setting-card{
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+.setting-card h2{
+   margin-bottom: 15px;
+   color: #333;
+}
+.setting-card label{
+   display: block;
+   margin-top: 12px;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+.setting-card input,
+.setting-card textarea{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.setting-card textarea{
+   height: 90px;
+   resize: none;
+}
+.btn-simpan,
+.btn-biru,
+.btn-kuning,
+.btn-merah,
+.btn-logout{
+   width: 100%;
+   padding: 8px;
+   margin-top: 12px;
+   border: none;
+   border-radius: 8px;
+   color: #fff;
+   cursor: pointer;
+   font-size: 16px;
+}
+.btn-simpan{
+    background: #28a745;
+}
+.btn-biru{
+    background: #007bff;
+}
+.btn-kuning{
+    background: #ffc107;
+    color: #000;
+}
+.btn-merah{
+    background: #dc3545;
+}
+.btn-logout{
+    background: #444;
+}
+
+
+.card-akun{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+.card-akun h2{
+   margin-bottom: 20px;
+}
+.card-akun input{
+   width: 100%;
+   padding: 9px;
+   margin: 8px 0 18px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+}
+/*tablet*/
+@media (max-width: 768px){
+    .setting-card,
+    .card-akun{
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+    input,
+    select,
+    textarea,
+    button{
+        width: 100%;
+        font-size: 15px;
+    }
+    table{
+        font-size: 14px;
+    }
+    th,
+    td{
+        padding: 8px;
+    }
+
+}
+/*hp*/
+@media (max-width:480px){
+    body{
+        font-size: 14px;
+    }
+    header{
+        padding: 15px;
+    }
+    header h1{
+        font-size: 20px;
+    }
+      header h2{
+        font-size: 20px;
+    }
+    .setting-card,
+    .card-akun{
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 15px;
+    }
+    button{
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+    input,
+    textarea,
+    select{
+        width: 100%;
+        font-size: 15px;
+    }
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    th,
+    td{
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+/*hp kecil*/
+@media (max-width:360px) {
+    header h1{
+        font-size: 18px;
+    }
+      header h2{
+        font-size: 18px;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px;
+    }
+    input,
+    textarea{
+        font-size: 14px;
+    }
+    table{
+        font-size: 12px;
+    }
+}
+/* Tombol instalasi PWA */
+.pwa-install {
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
