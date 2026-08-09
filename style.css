@@ -364,21 +364,21 @@
    font-weight: bold;
    color: #2563eb
 }
+/* TABEL LAPORAN - DEFAULT */
 .table-wrapper {
     width: 100%;
-    max-width: 100%;
+    margin-top: 20px;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-top: 20px;
     -webkit-overflow-scrolling: touch;
 }
 
 .laporan-table {
-    width: max-content;
-    min-width: 100%;
+    width: 100%;
     border-collapse: collapse;
     background: #fff;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .laporan-table th {
@@ -570,15 +570,25 @@
         width: 100%;
         font-size: 15px;
     }
-    table{
-        display: block;
+      .table-wrapper {
+        width: 100%;
+        max-width: 100%;
         overflow-x: auto;
-        white-space: nowrap;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
     }
-    th,
-    td{
-        font-size: 13px;
-        padding: 8px;
+
+    .laporan-table {
+        width: max-content;
+        min-width: 0;
+        table-layout: auto;
+    }
+
+    .laporan-table th,
+    .laporan-table td {
+        white-space: nowrap;
+        padding: 8px 10px;
     }
 }
 /*hp kecil*/
