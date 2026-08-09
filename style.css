@@ -364,34 +364,44 @@
    font-weight: bold;
    color: #2563eb
 }
-.table-wrapper{
+.table-wrapper {
     width: 100%;
+    max-width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     margin-top: 20px;
+    -webkit-overflow-scrolling: touch;
 }
-.laporan-table{
-    width: 100%;
+
+.laporan-table {
+    width: max-content;
+    min-width: 900px;
     border-collapse: collapse;
     background: #fff;
     border-radius: 10px;
-    overflow: hidden;
 }
-.laporan-table th{
-   background: #f4b400;
-   color: #000;
-   padding: 12px;
-   text-align: center;
+
+.laporan-table th {
+    background: #f4b400;
+    color: #000;
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap;
 }
-.laporan-table td{
-   border-bottom: 1px solid #ddd;
-   padding: 10px;
-   text-align: center;
+
+.laporan-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
 }
-.laporan-table tr:nth-child(even){
-   background: #f8f8f8;
+
+.laporan-table tr:nth-child(even) {
+    background: #f8f8f8;
 }
-.laporan-table th:hover{
-   background: #fff9d6;
+
+.laporan-table th:hover {
+    background: #fff9d6;
 }
 .btn-laporan{
     width: 100%;
