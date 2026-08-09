@@ -375,7 +375,7 @@
 
 .laporan-table {
     width: max-content;
-    min-width: 900px;
+    min-width: 100%;
     border-collapse: collapse;
     background: #fff;
     border-radius: 10px;
