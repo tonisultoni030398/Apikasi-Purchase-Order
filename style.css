@@ -165,7 +165,8 @@
 .po-page{
     background: #f1f5f9;
 }
-.judul-po{
+.judul-po {
+    position: relative;
     display: flex;
     background: #ebcd25;
     padding: 18px;
@@ -173,12 +174,14 @@
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
-.judul-po h2{
+
+.judul-po h2 {
     width: 100%;
     text-align: center;
     margin: 0;
     font-size: 32px;
 }
+
 .card{
     width: 95%;
     max-width: 500px;
@@ -403,6 +406,9 @@
 .laporan-table th:hover {
     background: #fff9d6;
 }
+
+
+/* KHUSUS HP */
 .btn-laporan{
     width: 100%;
     margin-top: 20px;
@@ -515,7 +521,7 @@
    border-radius: 8px;
 }
 /*tablet*/
-@media (max-width: 768px){
+@media (max-widt: 768px){
     .setting-card,
     .card-akun{
         width: 95%;
@@ -539,7 +545,7 @@
 
 }
 /*hp*/
-@media (max-width:480px){
+@media (max-widt:480px){
     body{
         font-size: 14px;
     }
@@ -570,7 +576,7 @@
         width: 100%;
         font-size: 15px;
     }
-      .table-wrapper {
+    .table-wrapper {
         width: 100%;
         max-width: 100%;
         overflow-x: auto;
@@ -610,12 +616,4 @@
     table{
         font-size: 12px;
     }
-}
-/* Tombol instalasi PWA */
-.pwa-install {
-    border: 0;
-    cursor: pointer;
-    text-align: center;
-    display: block;
-    box-sizing: border-box;
 }
